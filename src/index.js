@@ -1,30 +1,35 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Header from './header'
+import Content from './content'
+import Total from './total'
+
 
 const App = () => {
-  const course = 'Half Stack application development'
+  const ejercicio1 = 10
+  const ejercicio2= 16
+  const ejercicio3=4
+  
+  return (
+    <div>
+      <Header titulo="Laboratotio 03" />
+      <Content parrafo="Desarrollo de aplicaciones Web Avanzado" 
+      excersize= {ejercicio1}/>
+      <Content parrafo="Desarrollo de aplicaciones Web Avanzado" 
+      excersize= {ejercicio2}/>
+      <Content parrafo="Desarrollo de aplicaciones Web Avanzado" 
+      excersize= {ejercicio3}/>
+      <Total total={ejercicio1+ejercicio2+ejercicio3}/>
+    </div>
+  )
+  /*const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
   const exercises1 = 10
   const part2 = 'Using props to pass data'
   const exercises2 = 7
   const part3 = 'State of a component'
   const exercises3 = 14
-
-  return (
-    <div>
-      <h1>{course}</h1>
-      <p>
-        {part1} {exercises1}
-      </p>
-      <p>
-        {part2} {exercises2}
-      </p>
-      <p>
-        {part3} {exercises3}
-      </p>
-      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
-    </div>
-  )
+  */
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
