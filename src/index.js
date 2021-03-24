@@ -13,15 +13,16 @@ const App = () => {
   return (
     <div>
       <Header titulo="Laboratotio 03" />
-      <Content parrafo="Desarrollo de aplicaciones Web Avanzado" 
+      <Content/>
+      <Total total={ejercicio1+ejercicio2+ejercicio3}/>
+    </div>
+  )
+  /*<Content parrafo="Desarrollo de aplicaciones Web Avanzado" 
       excersize= {ejercicio1}/>
       <Content parrafo="Desarrollo de aplicaciones Web Avanzado" 
       excersize= {ejercicio2}/>
       <Content parrafo="Desarrollo de aplicaciones Web Avanzado" 
-      excersize= {ejercicio3}/>
-      <Total total={ejercicio1+ejercicio2+ejercicio3}/>
-    </div>
-  )
+      excersize= {ejercicio3}/>*/
   /*const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
   const exercises1 = 10
