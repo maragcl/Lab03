@@ -6,16 +6,16 @@ import Total from './total'
 
 
 const App = () => {
-  const ejercicio1 = 10
+  /*const ejercicio1 = 10
   const ejercicio2= 16
-  const ejercicio3=4
+  const ejercicio3=4*/
   
-  return (
-    <div>
-      <Header titulo="Laboratotio 03" />
-      <Content/>
-      <Total total={ejercicio1+ejercicio2+ejercicio3}/>
-    </div>
+    return (
+      <div>
+        <Header course={titulo} />
+        <Content Part={Part} />
+        <Total Part={Part} />
+      </div>
   )
   /*<Content parrafo="Desarrollo de aplicaciones Web Avanzado" 
       excersize= {ejercicio1}/>

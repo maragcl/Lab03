@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Part from './part'
+import Parts from './part'
 function Content(props) {
     return (
         <div>
-            <Part />
-
+            <Parts />
         </div>
     )
   }
